@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+	<!-- 指定context.xml文件 -->
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>/WEB-INF/TengoSpringWeb-servlet.xml</param-value>
+	</context-param>
+
+	<!-- 注册spring mvc的DispatcherServlet -->
+	<servlet>
+		<servlet-name>TengoSpringWeb</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet
+		</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<!-- 将根路径一下的所有内容映射到springMVC -->
+	<servlet-mapping>
+		<servlet-name>TengoSpringWeb</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+
+</web-app>
