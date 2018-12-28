@@ -1,6 +1,6 @@
 package tengo.spring.service;
 
-import tengo.spring.service.impl.UserServiceImpl;
+import tengo.spring.impl.service.UserServiceImpl;
 
 public class UserService implements UserServiceImpl {
 

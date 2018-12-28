@@ -1,4 +1,4 @@
-package tengo.spring.dao;
+package tengo.spring.impl.dao;
 
 import java.util.List;
 

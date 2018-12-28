@@ -1,4 +1,4 @@
-package tengo.spring.service.impl;
+package tengo.spring.impl.service;
 
 public interface UserServiceImpl {
 
